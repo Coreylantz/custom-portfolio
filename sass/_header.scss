@@ -1,0 +1,10 @@
+header {
+	.container {
+		flex-direction: column;
+	}
+	background: $orange;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
