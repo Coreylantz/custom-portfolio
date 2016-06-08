@@ -12,6 +12,9 @@
 				</figure>
 				<div class="aboutText">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti voluptatem dicta cupiditate unde recusandae nobis ipsam porro maxime facere, laborum atque temporibus, quis aperiam magni, dolorum consequatur repellendus. Maxime.</p>
+					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				</div>
 			</article>
 		</div>
@@ -59,12 +62,8 @@
 					<h5>CSS</h5>
 				</li>
 				<li class="skill">
-					<i class="devicons devicons-javascript_badge"></i>
+					<i class="devicons devicons-javascript_badge" id="small"></i>
 					<h5>JavaScript</h5>
-				</li>
-				<li class="skill">
-					<i class="devicons devicons-php"></i>
-					<h5>PHP</h5>
 				</li>
 				<li class="skill">
 					<i class="devicons devicons-responsive"></i>
@@ -75,6 +74,7 @@
 					<h5>Sass</h5>
 				</li>
 				</ul>
+				
 				<ul class="gallery">
 				<li class="skill">
 					<i class="devicons devicons-jquery"></i>
