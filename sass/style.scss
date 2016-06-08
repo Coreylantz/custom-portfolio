@@ -37,16 +37,62 @@ body {
 }
 
 .content {
+	width: 80%;
 	display: flex;
-	padding: 5%;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	margin: auto;
 }
 
 .full {
 	width: 100%;
 }
+
+button,
+input[type=submit] {
+	background: transparent;
+	border: 2px solid $white;
+	padding: 0;
+	transition: 0.3s ease-in-out;
+	border-radius: 5px;
+	position: relative;
+	color: $white;
+	
+	&:active {
+		top: 2px;
+	}
+	&:hover {
+		background: $formGreen;
+	}
+
+	a {
+		display: inline-block;
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+		text-transform: uppercase;
+		color: $white;
+		font-family: $mainText;
+		font-weight: bold;
+		letter-spacing: 0.1rem;
+	}
+}
+
+	p input,
+	p textarea {
+		background: $darkOrange;
+		border: none;
+		border-radius: 5px;
+		color: $white;
+	}
+
+	input[type=submit] {
+		&:hover {
+			background: $darkOrange;
+		}
+	}
+
 
 /*
 -----------
@@ -57,18 +103,162 @@ About Me Section
 section.about {
 	display: flex;
 	flex-direction: column;
+	padding: 5%;
+
+
+	.content {
+		padding: 0;
+	}
+
 	article.about {
 		display: flex;
+		@extend .flexCenter;
+		justify-content: space-between;
+		width: 100%;
+
+		.aboutText {
+			width: 60%;
+		}
 	}
 	figure {
-		width: 30%;
+		max-width: 300px;
 	}
 }
 
+
+/*
+-----------
+Portfolio Section
+-----------
+*/
 .portfolio {
 	width: 100%;
 	background: $green;
 }
+
+.website {
+	display: flex;
+	margin: 50px 0;
+
+	&:nth-child(2n) {
+		flex-direction: row-reverse;
+	}
+
+	.description {
+		padding: 3% 2%;
+
+		h3 {
+			padding-bottom: 50px;
+
+			&:after {
+				bottom: 30px;
+			}
+		}
+
+		p {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+/*
+-----------
+skills
+-----------
+*/
+
+.skills {
+	padding: 5%;
+}
+
+.gallery {
+	display: flex;
+	justify-content: space-around;
+}
+
+.skill {
+	margin: 10px;
+	text-align: center;
+	list-style: none;
+
+	i {
+		background: $icon;
+		color: $green;
+		display: block;
+		font-size: 6rem;
+		border-radius: 50%;
+		padding: 25px;
+	}
+
+	h5 {
+		padding-top: 10px;
+		color: $green;
+	}
+}
+
+
+/*
+-----------
+contact Section
+-----------
+*/
+
+.contact {
+	width: 100%;
+	background: $orange;
+	padding: 5%;
+
+	.contactText {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.social {
+			width: 40%;
+		}
+
+		.form {
+			width: 55%;
+			p {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+
+.social {
+	a {
+		text-align: left;
+		margin-right: 10px;
+
+		&:hover {
+			color: $darkOrange;
+		}
+	}
+
+	i {
+		font-size: 2.5rem;
+	}
+}
+
+.form {
+
+	input[type=text],
+	input[type=email],
+	textarea{
+		padding: 5px 20px;
+		width: 100%;
+	}
+
+	input[type=submit] {
+		padding: 5px 20px;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+}
+
+
 
 
 

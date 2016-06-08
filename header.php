@@ -24,8 +24,10 @@
   </nav> <!--/nav -->
 <header>
   <div class="container">
-    <h1>Corey Lantz</h1>
-    <h2>Front End Developer</h2>
+    <h1 class="animated fadeInLeft ">Corey Lantz</h1>
+    <h2 class="animated fadeInRight ">Front End Developer</h2>
+    <a href="#about"><h2><i class="fa fa-angle-double-down animated bounce infinite" aria-hidden="true"></i>
+    </h2></a>
   </div>
 </header><!--/.header-->
 

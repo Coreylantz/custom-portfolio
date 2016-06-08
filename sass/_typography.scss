@@ -8,27 +8,96 @@ a {
 	color: $white;
 	text-decoration: none;
 	font-family: $secondText;
-
 }
 
 /* headers */
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+h1,h2 {
+	font-weight: bold;
+	color: $white;
+	text-align: center;
+}
+
+h1,h2,h3 {
+	font-family: $mainText;
 }
 
 h1 {
-	font-family: $mainText;
-	font-weight: bold;
-	color: $white;
+	font-size: 8.5rem;
+	letter-spacing: 0.15rem;
+	text-shadow: 8px 8px 0 #000;
 }
+
+h2 {
+	font-size: 3.5rem;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+a {
+	text-align: center;
+	h2 {
+		&:hover {
+			color: $darkOrange;
+		}
+	}
+}
+
+h3 {
+	font-size: 3.5rem;
+	padding-bottom: 75px;
+	position: relative;
+	display: inline-block;
+	color: $green;
+	text-shadow: 4px 4px 0 $grey;
+
+	&:after {
+		content: '';
+		height: 3px;
+		width: 30%;
+		position: absolute;
+		bottom: 60px;
+		background: rgba(0,0,0,0.3);
+		left: (50% - 15%);
+	}
+}
+
+.portfolio h3,
+.contact h3 {
+	color: $white;
+	text-shadow: 4px 5px 0 #333;	
+}
+
+h5 {
+	font-size: 1.6rem;
+	word-wrap: wrap;
+}
+
+
+
 
 
 /* paragraphs */
 
 p {
 	line-height: 1.5;
+	letter-spacing: 0.1rem;
+	font-size: 1.6rem;
 	font-family: $mainText;
+	color: $white;
+}
+
+.about,
+.skills {
+	p {
+		color: $grey;
+	}
 }
 
 /*blockquotes*/

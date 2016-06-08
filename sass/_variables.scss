@@ -1,9 +1,16 @@
 $orange: #DB6865;
+$darkOrange: #87403E;
 $white: #FEFFFF;
-$green: #4FC8B0;
-$formGreen: #45B7A0;
-$nav: #2D3E50;
+$green: #3D7AA8;
+$formGreen: #3B6A8E;
+$nav: #333;
 $grey: #A7A8A9;
+$icon: #F1F2EC;
 
 $mainText: 'Titillium Web', sans-serif;
 $secondText: 'Lato', sans-serif;
+
+.flexCenter {
+	justify-content: center;
+	align-items: center;
+}

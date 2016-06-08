@@ -10,8 +10,9 @@
 				<figure>
 					<img src="<?php the_field('about_me_photo') ?>" alt="A Picture of me smiling on a chair">
 				</figure>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti voluptatem dicta cupiditate unde recusandae nobis ipsam porro maxime facere, laborum atque temporibus, quis aperiam magni, dolorum consequatur repellendus. Maxime.</p>
+				<div class="aboutText">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti voluptatem dicta cupiditate unde recusandae nobis ipsam porro maxime facere, laborum atque temporibus, quis aperiam magni, dolorum consequatur repellendus. Maxime.</p>
+				</div>
 			</article>
 		</div>
 	</section>
@@ -27,15 +28,13 @@
 	  				$websiteQuery->the_post();
 	  				?>
 	  				<article class="website">
-	  					<figure>
-	  						<?php the_post_thumbnail('medium')?>
+	  					<?php the_post_thumbnail('large')?>
 
-	  					</figure>
-	  					<div>
-	  						<h2><?php the_title() ?></h2>
+	  					<div class="description">
+	  						<h3><?php the_title() ?></h3>
 	  						<?php the_content(); ?>
 	  						<button>
-	  							<a href="<?php the_field('link') ?>">view it</a>
+	  							<a href="<?php the_field('link') ?>">View It Live</a>
 	  						</button>
 	  					</div>
 	  				</article>
@@ -47,90 +46,85 @@
 	  	</div>
 	</section>
 
-	<section class="skills">
+	<section class="skills" id="skills">
 		<div class="content">
 			<h3>Skills</h3>
-			<article class="gallery">
-				<div class="skill">
+			<ul class="gallery">
+				<li class="skill">
 					<i class="devicons devicons-html5"></i>
-					<p>HTML5</p>
-				</div>
-				<div class="skill">
+					<h5>HTML5</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-css3"></i>
-					<p>CSS</p>
-				</div>
-				<div class="skill">
+					<h5>CSS</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-javascript_badge"></i>
-					<p>JavaScript</p>
-				</div>
-				<div class="skill">
+					<h5>JavaScript</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-php"></i>
-					<p>PHP</p>
-				</div>
-				<div class="skill">
+					<h5>PHP</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-responsive"></i>
-					<p>Responsive design</p>
-				</div>
-				<div class="skill">
+					<h5>Responsive<br> design</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-sass"></i>
-					<p>Sass</p>
-				</div>
-				<div class="skill">
+					<h5>Sass</h5>
+				</li>
+				</ul>
+				<ul class="gallery">
+				<li class="skill">
 					<i class="devicons devicons-jquery"></i>
-					<p>jQuery</p>
-				</div>
-				<div class="skill">
+					<h5>jQuery</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-gulp"></i>
-					<p>Gulp</p>
-				</div>
-				<div class="skill">
-					<i class="devicons devicons-terminal_badge"></i>
-					<p>Terminal</p>
-				</div>
+					<h5>Gulp</h5>
+				</li>
+				<li class="skill">
+					<i class="devicons devicons-terminal"></i>
+					<h5>Terminal</h5>
+				</li>
 
-				<div class="skill">
+				<li class="skill">
 					<i class="devicons devicons-git"></i>
-					<p>Git</p>
-				</div>
-				<div class="skill">
+					<h5>Git</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-github_badge"></i>
-					<p>Github</p>
-				</div>
-				<div class="skill">
+					<h5>Github</h5>
+				</li>
+				<li class="skill">
 					<i class="devicons devicons-wordpress"></i>
-					<p>Wordpress</p>
-				</div>
-			</article>
+					<h5>Wordpress</h5>
+				</li>
+			</ul>
 
-			<h3>I am learning</h3>
-			<article class="gallery">
-				<div class="skill">
-					<i class="devicons devicons-angular"></i>
-					<p>Angular</p>
-				</div>
-				<div class="skill">
-					<i class="devicons devicons-react"></i>
-					<p>React</p>
-				</div>
-			</article>
 		</div>
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="content">
 				<h3>Contact</h3>
-			<article class="social">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quos, quasi! Ea obcaecati odit illum architecto iste, quam voluptate reiciendis, nesciunt</p>
-				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<article class="contactText">
+				<div class="social">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quos, quasi! Ea obcaecati odit illum architecto iste, quam voluptate reiciendis, nesciunt</p>
+					<p><a href="mailto:coreylantz12@gmail.com">coreylantz[at]gmail.com</a></p>
+					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+				<div class="form">
+					<?php // Start the loop ?>
+					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+						 <?php the_content(); ?>
+					<?php endwhile; // end the loop?>
+				</div>
 			</article>
-			<div class="form">
-				<?php // Start the loop ?>
-				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					 <?php the_content(); ?>
-				<?php endwhile; // end the loop?>
-			</div>
+
 		</div>
 	</section>
 
