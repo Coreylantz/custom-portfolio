@@ -14,6 +14,7 @@
 <body <?php body_class(); ?>>
 
   <nav>
+    <div class="fa fa-bars fa-2x"></div>
     <div class="container">
 
       <?php wp_nav_menu( array(
