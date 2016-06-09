@@ -31,8 +31,9 @@
 	  				$websiteQuery->the_post();
 	  				?>
 	  				<article class="website">
-	  					<?php the_post_thumbnail('large')?>
-
+	  					<figure>
+	  						<?php the_post_thumbnail('large')?>
+	  					</figure>
 	  					<div class="description">
 	  						<h3><?php the_title() ?></h3>
 	  						<?php the_content(); ?>
@@ -66,7 +67,7 @@
 					<h5>JavaScript</h5>
 				</li>
 				<li class="skill">
-					<i class="devicons devicons-responsive"></i>
+					<i class="fa fa-mobile" aria-hidden="true"></i>
 					<h5>Responsive<br> design</h5>
 				</li>
 				<li class="skill">

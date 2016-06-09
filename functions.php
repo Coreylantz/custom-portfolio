@@ -86,6 +86,14 @@ function hackeryou_scripts() {
   );
 
   wp_enqueue_script(
+  	'scrollReveal',
+  	'https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js',
+  	array('jquery', 'plugins'),
+  	null,
+  	true
+  );
+
+  wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
     false, //dependencies

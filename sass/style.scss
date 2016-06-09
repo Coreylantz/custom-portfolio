@@ -120,8 +120,16 @@ section.about {
 			width: 60%;
 
 			a {
+				margin: 10px;
+
 				&:hover i{
+					color: $icon;
+				}
+
+				i {
+					font-size: 3.0rem;
 					color: $grey;
+					transition: 0.3s ease-in;
 				}
 			}
 		}
@@ -144,14 +152,29 @@ Portfolio Section
 
 .website {
 	display: flex;
-	margin: 50px 0;
+	padding: 50px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+   	&:last-child {
+   		border: none;
+   	}
+
+	figure {
+		width: 50%;
+		object-fit: cover;
+		
+		img {
+			width: 100%;
+		}
+	}
 
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
 	}
 
 	.description {
-		padding: 3% 2%;
+		width: 50%;
+		padding: 25px 50px;
 
 		h3 {
 			padding-bottom: 50px;

@@ -47,8 +47,11 @@ h2 {
 
 a {
 	text-align: center;
-	h2 {
-		&:hover {
+
+	i {
+		transition: 0.3s ease-in;
+		
+		&:hover{
 			color: $darkOrange;
 		}
 	}
