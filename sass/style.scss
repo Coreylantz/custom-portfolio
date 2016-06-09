@@ -43,6 +43,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .full {
@@ -116,14 +120,27 @@ section.about {
 		justify-content: space-between;
 		width: 100%;
 
+		@media (max-width: 575px) {
+			flex-direction: column;
+		}
+
 		.aboutText {
 			width: 60%;
+
+			@media (max-width: 768px) {
+				width: 50%;
+				padding-left: 25px;
+			}
+
+			@media (max-width: 575px) {
+				width: 100%;
+			}
 
 			a {
 				margin: 10px;
 
 				&:hover i{
-					color: $icon;
+					color: $green;
 				}
 
 				i {
@@ -155,6 +172,14 @@ Portfolio Section
 	padding: 50px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 
+    @media (max-width: 768px) {
+    	padding: 50px 10px;
+    }
+
+    @media (max-width: 575px) {
+    	flex-direction: column;
+    }
+
    	&:last-child {
    		border: none;
    	}
@@ -162,6 +187,10 @@ Portfolio Section
 	figure {
 		width: 50%;
 		object-fit: cover;
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
 		
 		img {
 			width: 100%;
@@ -170,11 +199,27 @@ Portfolio Section
 
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
+
+		@media (max-width: 575px) {
+			flex-direction: column;
+		}
 	}
 
 	.description {
 		width: 50%;
 		padding: 25px 50px;
+
+		@media (max-width: 575px) {
+			padding: 25px;
+		}
+
+		@media (max-width: 768px) {
+			padding: 20px;
+		}
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
 
 		h3 {
 			padding-bottom: 50px;
@@ -204,12 +249,21 @@ skills
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
+
+	@media (max-width: 768px) {
+		flex-wrap: wrap;
+	}
 }
 
 .skill {
 	margin: 10px;
 	text-align: center;
 	list-style: none;
+
+	@media (max-width: 425px) {
+		margin: 0;
+		padding: 0;
+	}
 
 	i {
 		color: $green;
@@ -247,12 +301,25 @@ contact Section
 		justify-content: space-between;
 		width: 100%;
 
+		@media (max-width: 575px) {
+			flex-direction: column;
+		}
+
 		.social {
 			width: 40%;
+
+			@media (max-width: 575px) {
+				width: 100%;
+			}
 		}
 
 		.form {
 			width: 55%;
+
+			@media (max-width: 575px) {
+				width: 100%;
+			}
+
 			p {
 				text-transform: uppercase;
 			}
