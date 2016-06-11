@@ -11,7 +11,8 @@
 					<img src="<?php the_field('about_me_photo') ?>" alt="A Picture of me smiling on a chair">
 				</figure>
 				<div class="aboutText">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis corrupti voluptatem dicta cupiditate unde recusandae nobis ipsam porro maxime facere, laborum atque temporibus, quis aperiam magni, dolorum consequatur repellendus. Maxime.</p>
+					<p>Hey, I'm  Corey. I'm a Front End Web Developer based in Toronto and a graduate of the Immersive Front-End Web Development program at HackerYou.</p>
+					<p>I enjoy making fun creative, useful websites using clean semantic code. When I’m not coding you can find me making sausages, playing with dogs or playing video games.</p>
 					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -37,6 +38,7 @@
 	  					<div class="description">
 	  						<h3><?php the_title() ?></h3>
 	  						<?php the_content(); ?>
+	  						<h6><?php echo the_field('tools') ?></h6>
 	  						<button>
 	  							<a href="<?php the_field('link') ?>">View It Live</a>
 	  						</button>

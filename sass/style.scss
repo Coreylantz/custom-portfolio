@@ -126,6 +126,7 @@ section.about {
 
 		.aboutText {
 			width: 60%;
+			padding-left: 20px;
 
 			@media (max-width: 768px) {
 				width: 50%;
@@ -171,6 +172,7 @@ Portfolio Section
 	display: flex;
 	padding: 50px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    align-items: center;
 
     @media (max-width: 768px) {
     	padding: 50px 10px;
@@ -200,6 +202,11 @@ Portfolio Section
 
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
+		
+		.description {
+			padding: 25px 50px 25px 0px;
+		}
+
 
 		@media (max-width: 575px) {
 			flex-direction: column;
@@ -208,7 +215,7 @@ Portfolio Section
 
 	.description {
 		width: 50%;
-		padding: 25px 50px;
+		padding: 25px 0px 25px 50px;
 
 		@media (max-width: 575px) {
 			padding: 25px;
@@ -232,6 +239,7 @@ Portfolio Section
 
 		p {
 			font-size: 1.4rem;
+			margin: 0;
 		}
 	}
 }

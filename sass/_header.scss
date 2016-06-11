@@ -10,4 +10,16 @@ header {
 	.container {
 		flex-direction: column;
 	}
+
+	.logo {
+		width: 15rem;
+		fill: hsla(2,52%,9%,1);
+		margin: auto;
+		height: 100%;
+		transition: 0.3s ease;
+
+		&:hover {
+			transform: rotate(10deg);
+		}
+	}
 }
