@@ -9,7 +9,6 @@ $(function(){
    		var anchorPoint = $(anchorId).attr('href');
    		anchorIds.push(anchorPoint);
    }
-   		// console.log(anchorIds);
 
 
    	$(window).scroll(function(){
@@ -17,10 +16,11 @@ $(function(){
    		var windowPosition = $(window).scrollTop() + 60;
    		// Get the height of the screen
    		var windowHeight = $(window).height() + 60;
+         // Get the height of the total document
    		var docHeight = $(document).height();
 
 
-
+         // 
    		for (var i = 0; i < anchorIds.length; i++) {
    			var sectionId = anchorIds[i];
    			var sectionPosition = $(sectionId).offset().top;
@@ -57,4 +57,16 @@ $(function(){
             $('.menu').css('background', 'none');
          }
       });
+
+
+      // 
+
+      setInterval(function() {
+         if ($('#logo').attr('class') === 'logo' ) {
+            $("#logo").attr('class', 'logo rotate');
+         }
+         else{
+            $("#logo").attr('class', 'logo');
+         }
+      }, 5000);
 });

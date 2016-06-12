@@ -66,8 +66,11 @@ input[type=submit] {
 	&:active {
 		top: 2px;
 	}
-	&:hover {
+	&:hover,
+	&:focus {
 		background: $formGreen;
+		outline: none;
+		transform: scale(1.05);
 	}
 
 	a {
@@ -83,21 +86,20 @@ input[type=submit] {
 	}
 }
 
-	p input,
-	p textarea {
+p input,
+p textarea {
+	background: $darkOrange;
+	border: none;
+	border-radius: 5px;
+	color: $white;
+}
+
+input[type=submit] {
+	&:hover,
+	&:focus {
 		background: $darkOrange;
-		border: none;
-		border-radius: 5px;
-		color: $white;
 	}
-
-	input[type=submit] {
-		&:hover {
-			background: $darkOrange;
-		}
-	}
-
-
+}
 /*
 -----------
 About Me Section
@@ -140,8 +142,10 @@ section.about {
 			a {
 				margin: 10px;
 
-				&:hover i{
+				&:hover i,
+				&:focus i{
 					color: $green;
+					outline: none;
 				}
 
 				i {
@@ -342,8 +346,14 @@ contact Section
 		text-align: left;
 		margin-right: 10px;
 
-		&:hover {
+		&:hover,
+		&:focus {
+			outline: none;
 			color: $darkOrange;
+
+			i {
+				color:$darkOrange;
+			}
 		}
 	}
 
@@ -359,12 +369,23 @@ contact Section
 	textarea{
 		padding: 5px 20px;
 		width: 100%;
+		max-width: 506px;
+		border: 1px solid transparent;
+		transition: all 0.3s;
+
+		&:focus {
+			outline: none;
+			transform: scale(1.02);
+		}
 	}
+
+
 
 	input[type=submit] {
 		padding: 5px 20px;
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
+		transition: all 0.3s;
 	}
 }
 

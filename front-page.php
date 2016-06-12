@@ -13,9 +13,9 @@
 				<div class="aboutText">
 					<p>Hey, I'm  Corey. I'm a Front End Web Developer based in Toronto and a graduate of the Immersive Front-End Web Development program at HackerYou.</p>
 					<p>I enjoy making fun creative, useful websites using clean semantic code. When I’m not coding you can find me making sausages, playing with dogs or playing video games.</p>
-					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/Coreylantz"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/coreylantz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://ca.linkedin.com/in/coreylantz"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				</div>
 			</article>
 		</div>
@@ -116,9 +116,9 @@
 				<div class="social">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quos, quasi! Ea obcaecati odit illum architecto iste, quam voluptate reiciendis, nesciunt</p>
 					<p><a href="mailto:coreylantz12@gmail.com">coreylantz[at]gmail.com</a></p>
-					<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/Coreylantz"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/coreylantz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://ca.linkedin.com/in/coreylantz"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				</div>
 				<div class="form">
 					<?php // Start the loop ?>

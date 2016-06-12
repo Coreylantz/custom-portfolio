@@ -27,7 +27,8 @@ nav {
 			}
 
 
-			&:hover a {
+			&:hover a,
+			 {
 				background: $green;
 			}
 
@@ -42,7 +43,12 @@ nav {
 				font-size: 1.6rem;
 				text-transform: uppercase;
 				border-radius: 5px;
-				transition: 0.2s ease-in;
+				transition: background 0.2s ease-in;
+
+				&:focus {
+					outline: none;
+					background: $green;
+				}
 
 				@media (max-width: 767px) {
 					background: none;

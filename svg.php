@@ -1,6 +1,6 @@
 <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" enable-background="new 0 0 612 612" xml:space="preserve" class="logo">
+	 x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" enable-background="new 0 0 612 612" xml:space="preserve" class="logo" id='logo'>
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
