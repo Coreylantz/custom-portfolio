@@ -11,5 +11,20 @@ footer {
 		flex-direction: row;
 		justify-content: space-around;
 		width: 80%;
+		
+		@media (max-width:820px) {
+			width: 100%;
+			justify-content: space-between;
+			padding: 0 5px;
+			text-align: center;
+		}
+
+
+		p {
+			@media (max-width:365px) {
+				font-size: 1.3rem;
+				margin: 0;
+			}
+		}
 	}
 }
