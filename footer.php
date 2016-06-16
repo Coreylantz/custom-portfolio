@@ -1,6 +1,8 @@
 <footer>
   <div class="container">
+    <p>Illustration by Briana Chan</p>
     <p>Coded by Corey Lantz <?php echo date('Y'); ?></p>
+    <p>Photo Credit Pam Lau</p>
   </div>
 </footer>
 

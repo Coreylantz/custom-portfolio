@@ -241,10 +241,7 @@ Portfolio Section
 			}
 		}
 
-		p {
-			font-size: 1.4rem;
-			margin: 0;
-		}
+		
 	}
 }
 
@@ -260,11 +257,11 @@ skills
 
 .gallery {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
 	padding: 0;
 
 	@media (max-width: 768px) {
-		flex-wrap: wrap;
 	}
 }
 
@@ -274,8 +271,9 @@ skills
 	list-style: none;
 
 	@media (max-width: 425px) {
-		margin: 0;
+		margin: 0 10px;
 		padding: 0;
+		width: calc(50% - 20px);
 	}
 
 	i {
@@ -387,6 +385,20 @@ contact Section
 		letter-spacing: 0.1rem;
 		transition: all 0.3s;
 	}
+
+}
+div.wpcf7-response-output {
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    background: #87403E;
+    padding: 10px;
+    font-size: 1.2rem;	
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok {
+	border: 2px solid white;
 }
 
 

@@ -6,4 +6,10 @@ footer {
 	justify-content: center;
 	align-items: center;
 	height: 60px;
+
+	.container {
+		flex-direction: row;
+		justify-content: space-around;
+		width: 80%;
+	}
 }

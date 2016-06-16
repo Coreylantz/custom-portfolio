@@ -15,7 +15,11 @@
 <body <?php body_class(); ?>>
 
   <nav>
-    <div class="fa fa-bars fa-2x"></div>
+    <div class="hamburger">
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </div>
     <div class="container">
 
       <?php wp_nav_menu( array(
@@ -29,7 +33,7 @@
     <?php include('svg.php'); ?>
     <h1>Corey Lantz</h1>
     <h2>Front End Developer</h2>
-    <h2><a href="#about"><i class="fa fa-angle-double-down animated bounce infinite" aria-hidden="true"></i>
+    <h2><a href="#about"><i class="fa fa-angle-double-down animated bounce" aria-hidden="true"></i>
     </a></h2>
   </div>
 </header><!--/.header-->

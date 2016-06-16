@@ -40,7 +40,7 @@
 	  						<?php the_content(); ?>
 	  						<h6><?php echo the_field('tools') ?></h6>
 	  						<button>
-	  							<a href="<?php the_field('link') ?>">View It Live</a>
+	  							<a target="_blank" href="<?php the_field('link') ?>">View It Live</a>
 	  						</button>
 	  					</div>
 	  				</article>
@@ -69,29 +69,25 @@
 					<h5>JavaScript</h5>
 				</li>
 				<li class="skill">
-					<i class="fa fa-mobile" aria-hidden="true"></i>
-					<h5>Responsive<br> design</h5>
+					<i class="devicons devicons-jquery"></i>
+					<h5>jQuery</h5>
 				</li>
 				<li class="skill">
 					<i class="devicons devicons-sass"></i>
 					<h5>Sass</h5>
 				</li>
-				</ul>
-				
-				<ul class="gallery">
 				<li class="skill">
-					<i class="devicons devicons-jquery"></i>
-					<h5>jQuery</h5>
-				</li>
-				<li class="skill">
-					<i class="devicons devicons-gulp"></i>
-					<h5>Gulp</h5>
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+					<h5>Responsive<br>design</h5>
 				</li>
 				<li class="skill">
 					<i class="devicons devicons-terminal"></i>
 					<h5>Terminal</h5>
 				</li>
-
+				<li class="skill">
+					<i class="devicons devicons-gulp"></i>
+					<h5>Gulp</h5>
+				</li>
 				<li class="skill">
 					<i class="devicons devicons-git"></i>
 					<h5>Git</h5>
@@ -114,8 +110,8 @@
 				<h3>Contact</h3>
 			<article class="contactText">
 				<div class="social">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quos, quasi! Ea obcaecati odit illum architecto iste, quam voluptate reiciendis, nesciunt</p>
-					<p><a href="mailto:coreylantz12@gmail.com">coreylantz[at]gmail.com</a></p>
+					<p>If you are interested in working together, I'd love to hear from you.</p>
+					<p><a href="mailto:corey@coreylantz.com">corey[at]coreylantz.com</a></p>
 					<a href="https://github.com/Coreylantz"><i class="fa fa-github" aria-hidden="true"></i></a>
 					<a href="https://twitter.com/coreylantz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 					<a href="https://ca.linkedin.com/in/coreylantz"><i class="fa fa-linkedin" aria-hidden="true"></i></a>

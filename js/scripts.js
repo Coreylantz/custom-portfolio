@@ -48,7 +48,8 @@ $(function(){
 
 
       // Hamburger Nav
-      $('.fa-bars').on('click', function(){
+      $('.hamburger').on('click', function(){
+         $(this).toggleClass('active');
          $('.menu').toggleClass('show');
          if ($('.menu').css('background') != null) {
             $('.menu').css('background', 'rgba(51, 51, 51, 0.8)');
@@ -59,13 +60,13 @@ $(function(){
       });
 
 
-      // 
+      // rotate logo function
 
       setInterval(function() {
          if ($('#logo').attr('class') === 'logo' ) {
             $("#logo").attr('class', 'logo rotate');
          }
-         else{
+         else {
             $("#logo").attr('class', 'logo');
          }
       }, 5000);
